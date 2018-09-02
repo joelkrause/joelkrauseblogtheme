@@ -1,0 +1,147 @@
+.site-header {
+    color: $mainColor;
+    margin: 0 0 3.5%;
+
+    .bar {
+        padding: 3.5% 3.5% 0;
+        display: flex;
+        align-items: center;
+
+        .site-logo {
+            position: relative;
+            display: flex;
+            align-items: center;
+            transition: all 0.25s;
+
+            span {
+                font-size: 1.25em;
+                border-bottom: 2px solid $accentColor;
+                margin-left: 15px;
+            }
+
+            img {
+                width: 75px;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+
+        nav {
+            flex-grow: 1;
+            border-left: 1px solid #eee;
+            margin-left: 30px;
+
+            ul,
+            li {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 0 20px;
+
+                    a {
+                        color: $mainColor;
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 1.25em;
+                        transition: all 0.25s;
+
+                        &:hover {
+                            color: $accentColor;
+                        }
+                    }
+
+                    &.current-menu-item {
+                        a {
+                            color: $accentColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social--network {
+            font-size: 2em;
+            padding: 0 25px;
+
+            a {
+                color: #000;
+                text-decoration: none;
+                transition: all 0.25s;
+
+                &:hover {
+                    color: $accentColor;
+                }
+            }
+        }
+
+        .email-link {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.25em;
+            font-weight: 500;
+        }
+    }
+
+    .site-info {
+        color: $mainColor;
+        padding: 10% 0;
+
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            line-height: 125%;
+            font-weight: 400;
+        }
+
+        a {
+            color: $mainColor;
+            text-decoration: none;
+            border-bottom: 2px solid #000;
+        }
+    }
+}
+
+.page--title {
+    font-weight: 500;
+    font-size: 1.75em;
+    line-height: 1.45em;
+    padding: 25vh 0;
+
+    a {
+        color: $accentColor;
+        transition: all 0.25s;
+        text-decoration: none;
+
+        &:hover {
+            color: #eee;
+        }
+    }
+
+    .blog-title {
+        color: #2d3436;
+        padding: 0 0 10px 0;
+        margin: 0 0 10px 0;
+        position: relative;
+        display: inline-block;
+        font-size: 3em;
+        font-weight: 900;
+
+        &:after {
+            content: '';
+            width: 25%;
+            height: 5px;
+            background-color: $accentColor;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

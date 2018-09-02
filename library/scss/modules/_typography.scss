@@ -1,0 +1,78 @@
+@import url("https://use.typekit.net/ool6vrj.css");
+@import url('https://rsms.me/inter/inter-ui.css');
+
+* {
+  box-sizing: border-box;
+}
+
+.preloader {
+  background-color: $accentColor;
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+  width: 100%;
+  z-index: 9;
+  position: fixed;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pulse {
+    width: 50px;
+    height: 50px;
+    background-color: #031c9b;
+    border-radius: 50%;
+    display: block;
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: 0;
+    }
+
+    50% {
+      transform: scale(0.75);
+    }
+
+    100% {
+      transform: 0;
+    }
+  }
+
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: #2d3436;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 12pt;
+}
+
+hr {
+  margin: 50px 0;
+  border: 0;
+  border-top: 1px solid #ececec;
+}

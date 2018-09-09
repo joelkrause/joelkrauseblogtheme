@@ -136,12 +136,22 @@
 
         &:after {
             content: '';
-            width: 25%;
+            width: 12.5%;
             height: 5px;
             background-color: $accentColor;
             position: absolute;
             bottom: 0;
             left: 0;
+        }
+    }
+}
+.single {
+    .page--title {
+        text-align: center;
+        .blog-title {
+            &:after {
+                left: 44%;
+            }
         }
     }
 }

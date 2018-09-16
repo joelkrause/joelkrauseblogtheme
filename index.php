@@ -39,6 +39,7 @@ get_header();
   <?php endwhile; ?>
   <?php endif; ?>
 </ul>
+<button type="button">Load More</button>
 
 <?php
 get_footer();

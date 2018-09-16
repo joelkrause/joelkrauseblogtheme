@@ -1,6 +1,5 @@
 .site-header {
-    background: #4b4b4b;
-    color: #fff;
+    color: $mainColor;
     margin: 0 0 3.5%;
 
     .bar {
@@ -22,11 +21,6 @@
 
             img {
                 width: 75px;
-                transition: all 0.25s;
-
-                &:hover {
-                    transform: rotate(45deg);
-                }
             }
 
             a {
@@ -53,20 +47,20 @@
                     padding: 0 20px;
 
                     a {
-                        color: #fff;
+                        color: $mainColor;
                         text-decoration: none;
                         font-weight: 500;
                         font-size: 1.25em;
                         transition: all 0.25s;
 
                         &:hover {
-                            // color: $accentColor;
+                            color: $accentColor;
                         }
                     }
 
                     &.current-menu-item {
                         a {
-                            // color: $accentColor;
+                            color: $accentColor;
                         }
                     }
                 }
@@ -116,7 +110,6 @@
 }
 
 .page--title {
-    @include ibm(500, normal);
     font-size: 1.75em;
     line-height: 1.45em;
     padding: 15vh 0;
@@ -137,8 +130,7 @@
         margin: 0 0 10px 0;
         position: relative;
         display: inline-block;
-        font-size: 3em;
-        font-weight: 900;
+        font-size: 2em;
 
         &:after {
             content: '';

@@ -1,9 +1,10 @@
 .site-header {
-    color: $mainColor;
+    background: #4b4b4b;
+    color: #fff;
     margin: 0 0 3.5%;
 
     .bar {
-        padding: 3.5% 3.5% 0;
+        padding: 3.5% 0;
         display: flex;
         align-items: center;
 
@@ -21,6 +22,11 @@
 
             img {
                 width: 75px;
+                transition: all 0.25s;
+
+                &:hover {
+                    transform: rotate(45deg);
+                }
             }
 
             a {
@@ -47,20 +53,20 @@
                     padding: 0 20px;
 
                     a {
-                        color: $mainColor;
+                        color: #fff;
                         text-decoration: none;
                         font-weight: 500;
                         font-size: 1.25em;
                         transition: all 0.25s;
 
                         &:hover {
-                            color: $accentColor;
+                            // color: $accentColor;
                         }
                     }
 
                     &.current-menu-item {
                         a {
-                            color: $accentColor;
+                            // color: $accentColor;
                         }
                     }
                 }
@@ -110,10 +116,10 @@
 }
 
 .page--title {
-    font-weight: 500;
+    @include ibm(500, normal);
     font-size: 1.75em;
     line-height: 1.45em;
-    padding: 25vh 0;
+    padding: 15vh 0;
 
     a {
         color: $accentColor;
@@ -145,9 +151,11 @@
         }
     }
 }
+
 .single {
     .page--title {
         text-align: center;
+
         .blog-title {
             &:after {
                 left: 44%;

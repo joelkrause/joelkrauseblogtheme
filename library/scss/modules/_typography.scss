@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/ool6vrj.css");
 @import url('https://rsms.me/inter/inter-ui.css');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,500i,700,700i');
 
 body,
 html {
@@ -57,12 +58,11 @@ html {
 
 body,
 html {
+  @include ibm(500, normal);
   margin: 0;
   padding: 0;
   color: #2d3436;
-  font-family: 'Inter UI', sans-serif;
-  font-size: 0.875em;
-  font-weight: 400;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -72,7 +72,7 @@ h3,
 h4,
 h5 {
   margin-top: 0;
-  font-weight: 700;
+  @include ibm(700, italic);  
 }
 
 h1 {

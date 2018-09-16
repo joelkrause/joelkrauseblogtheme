@@ -21,27 +21,27 @@
 <body <?php body_class(); ?>>
   <div class="preloader"></div>
   <header class="site-header">
-    <div class="bar">
-      <div class="site-logo">
-        <a href="<?php echo home_url(); ?>">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/joelkrause.svg" />
-        </a>
-      </div>
-      <nav>
-        <?php
+    <div class="container">
+      <div class="bar">
+        <div class="site-logo">
+          <a href="<?php echo home_url(); ?>">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/joelkrause.svg" />
+          </a>
+        </div>
+        <nav>
+          <?php
             wp_nav_menu( array(
               'theme_location' => 'primary',
               'menu_id'        => 'primary',
             ) );
           ?>
-      </nav>
-      <div class="social--network">
-        <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
+        </nav>
+        <div class="social--network">
+          <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
-      <a href="mailto:hi@joelkrause.me" class="email-link">hi@joelkrause.me</a>
-    </div>
-    <div class="page--title">
-      <div class="container">
+      <div class="page--title">
+
         <?php if (is_front_page() ) { ?>
         Hey, I'm Joel &amp; I'm a passionate front-end developer at
         <a href="http://www.chriate.com.au" target="_blank">Studio Chriate</a>.
@@ -56,6 +56,7 @@
           </div>
         </div>
         <?php } ?>
+
       </div>
     </div>
   </header>

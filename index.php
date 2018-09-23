@@ -15,30 +15,6 @@
 get_header();
 ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-<?php
- // Assign the year to a variable
- $year = the_date('Y', '', '', FALSE);
-
- // If your year hasn't been echoed earlier in the loop, echo it now
- if ($year !== $year_check) {
- echo "<h2 class='year'>" . $year . "</h2>";
- }
-
- // Now that your year has been printed, assign it to the $year_check variable
- $year_check = $year;
-?>
-
-<div id="post-<?php the_ID(); ?>">
-<?php the_title();?>
-</div><!-- end .post-wrap -->
-<?php endwhile; ?>
-<!-- previous next nav -->
-<?php else : ?>
-<!-- posts not found info -->
-<?php endif; ?>
-
 <ul class="post-list">
   <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>

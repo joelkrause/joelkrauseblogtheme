@@ -15,6 +15,24 @@
 get_header();
 ?>
 
+<?php
+$day_check = '';
+while (have_posts()) : the_post();
+  $day = get_the_date('Y');
+  if ($day != $day_check) {
+    if ($day_check != '') {
+      echo '</ul>'; // close the list here
+    }
+    echo get_the_date() . '<ul>';
+  }
+?>
+<li><a href="<?php the_permalink() ?>"><?php the_time(); ?> <b><?php the_title(); ?></b></a></li>
+<?php
+$day_check = $day;
+endwhile; ?>
+                                             <?php if ( have_posts() ) : ?>
+<?php endif; ?>
+
 <ul class="post-list">
   <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>

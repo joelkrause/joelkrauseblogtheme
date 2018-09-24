@@ -1,6 +1,8 @@
 .site-header {
     color: $mainColor;
     margin: 0 0 3.5%;
+    @include background;
+    border-bottom: 1px solid rgba(0, 221, 149, 0.15);
 
     .bar {
         padding: 7.5% 0 0;
@@ -112,9 +114,10 @@
 }
 
 .page--title {
-    font-size: 2em;
+    font-size: 1.75em;
     line-height: 1.45em;
     padding: 15vh 0;
+    font-weight: bold;
 
     a {
         color: $accentColor;
@@ -138,7 +141,7 @@
             content: '';
             width: 8px;
             height: 8px;
-            background-color: #0828CC;
+            background-color: $accentColor;
             position: absolute;
             bottom: -10px;
             left: 0;

@@ -26,6 +26,7 @@
         <div class="site-logo">
           <a href="<?php echo home_url(); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" />
+            <span>Joel Krause</span>
           </a>
         </div>
         <div class="social--network">
@@ -37,7 +38,6 @@
         <?php if (is_front_page() ) { ?>
         Hey, I'm Joel &amp; I'm a passionate front-end developer at
         <a href="http://www.chriate.com.au" target="_blank">Studio Chriate</a>.
-        <br> This is my space where I share my findings, tips and tricks everything front-end development related.
         <?php } else if (is_page()) { ?>
         <?php the_title('<h1 class="blog-title">','</h1>');?>
         <?php } else if (is_singular()) { ?>

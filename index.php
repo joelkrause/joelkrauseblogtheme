@@ -14,6 +14,7 @@
 
 get_header();
 ?>
+
 <ul class="post-list">
   <?php
 $day_check = '';

@@ -14,7 +14,7 @@ html {
 }
 
 .preloader {
-  background-color: $accentColor;
+  @include preloader-bg;
   opacity: 1;
   visibility: visible;
   height: 100vh;

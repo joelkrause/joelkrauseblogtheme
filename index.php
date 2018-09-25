@@ -30,14 +30,14 @@ while (have_posts()) : the_post();
     <a href="<?php the_permalink() ?>">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-2">
-            <div class="date">
-              <?php the_time('M jS'); ?>
-            </div>
-          </div>
           <div class="col-12 col-lg-10">
             <div class="title">
               <?php the_title(); ?>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 text-right">
+            <div class="date">
+              <?php the_time('M jS'); ?>
             </div>
           </div>
         </div>

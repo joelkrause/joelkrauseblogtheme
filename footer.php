@@ -1,8 +1,6 @@
 <footer class="site--footer">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">about</div>
-            <div class="col-12 col-md-6">about</div>
             <div class="col-12">
                 <div class="copyright">
                     &copy; Copyright

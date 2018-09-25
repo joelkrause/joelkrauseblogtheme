@@ -1,11 +1,6 @@
 .container {
   max-width: 75%;
   margin: 0 auto;
-  padding: 0 5%;
-
-  @media (min-width: 1920px) {
-    max-width: 60%;
-  }
 }
 
 .post-list {
@@ -15,14 +10,14 @@
 }
 
 .post {
-  padding: 25px 0;
+  padding: 20px 0;
   font-size: 1.2em;
-  overflow: auto;
   color: #fff;
 
   a {
     color: #2d3436;
     text-decoration: none;
+    transition: all 0.25s;
 
     &:hover {
       color: $accentColor;
@@ -42,4 +37,17 @@
   .site-info {
     text-align: center;
   }
+
+  .post--nav {
+    padding: 25px 0 0;
+    margin: 25px 0 0;
+    border-top: 1px solid #ececec;
+  }
+}
+
+.index--date {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 0 0 3.5%;
+  margin-top: 25px;
 }

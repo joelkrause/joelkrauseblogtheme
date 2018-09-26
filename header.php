@@ -31,8 +31,8 @@
         <nav class="site--nav">
             <?php
                 wp_nav_menu( array(
-                    'theme_location' => 'Primary',
-                    'menu_id'        => 'Primary',
+                    'theme_location' => 'Primary Menu',
+                    'menu_id'        => 'Primary Menu',
                 ) );
             ?>
         </nav>

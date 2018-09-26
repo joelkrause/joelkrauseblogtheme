@@ -35,6 +35,13 @@ while (have_posts()) : the_post();
             <div class="title">
               <?php the_title(); ?>
             </div>
+            <div class="tags">
+                <?php
+                if(get_the_tag_list()) {
+                    echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+                }
+                ?>
+            </div>
           </div>
           <div class="col-12 col-lg-2 text-right">
             <div class="date">

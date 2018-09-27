@@ -20,6 +20,8 @@
 
 <body <?php body_class(); ?>>
   <div class="preloader"></div>
+  <div class="site--side-bg"></div>
+  <div class="site--wrapper">
   <header class="site-header">
     <div class="container">
       <div class="bar">

@@ -1,7 +1,6 @@
 .site-header {
     color: $mainColor;
     margin: 0 0 3.5%;
-    @include background;
 
     .bar {
         padding: 5% 0 0;
@@ -119,9 +118,23 @@
     }
 }
 
+.site--wrapper {
+    width: 70%;
+}
+
+.site--side-bg {
+    width: 30%;
+    @include preloader-bg;
+    background-color: $accentColor;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 .home {
     .page--title {
-        max-width: 60%;
+        max-width: 75%;
     }
 }
 
@@ -168,15 +181,15 @@
     }
 }
 
-.single {
-    .page--title {
-        text-align: center;
+// .single {
+//     .page--title {
+//         text-align: center;
 
-        .blog-title {
-            &:after {
-                left: 50%;
-                transform: translateY(-50%);
-            }
-        }
-    }
-}
+//         .blog-title {
+//             &:after {
+//                 left: 50%;
+//                 transform: translateY(-50%);
+//             }
+//         }
+//     }
+// }

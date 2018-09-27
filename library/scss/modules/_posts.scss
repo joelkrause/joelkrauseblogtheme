@@ -1,5 +1,5 @@
 .container {
-  max-width: 75%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -13,6 +13,11 @@
   padding: 20px 0;
   font-size: 1.2em;
   color: #fff;
+  border-top: 1px solid #ececec;
+
+  &:last-of-type {
+    border-bottom: 1px solid #ececec;
+  }
 
   a {
     color: #2d3436;
@@ -24,12 +29,19 @@
     }
   }
 
-  .title {
-    float: left;
-  }
-
   .date {
     color: #adadad;
+  }
+
+  .tags {
+    .post--tag {
+      background: #000;
+      font-size: 0.5em;
+      padding: 5px;
+      margin: 10px 5px 0 0;
+      display: inline-block;
+      line-height: 1;
+    }
   }
 }
 

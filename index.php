@@ -28,29 +28,32 @@ while (have_posts()) : the_post();
   }
 ?>
   <li class="post">
-    <a href="<?php the_permalink() ?>">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-10">
-            <div class="title">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10">
+          <div class="title">
+            <a href="<?php the_permalink() ?>">
               <?php the_title(); ?>
-            </div>
-            <div class="tags">
-                <?php
-                if(get_the_tag_list()) {
-                    echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-                }
-                ?>
-            </div>
+            </a>
           </div>
-          <div class="col-12 col-lg-2 text-right">
-            <div class="date">
-              <?php the_time('M jS'); ?>
-            </div>
+          <div class="tags">
+            <?php
+            $post_tags = get_the_tags();
+            if ($post_tags) {
+              foreach($post_tags as $tag) {
+                echo '<span class="post--tag ' . $tag->slug . '">' . $tag->name . '</span>';
+              }
+            }
+            ?>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 text-right">
+          <div class="date">
+            <?php the_time('M jS'); ?>
           </div>
         </div>
       </div>
-    </a>
+    </div>
   </li>
   <?php
 $day_check = $day;

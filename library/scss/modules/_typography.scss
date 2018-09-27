@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/bmo2zpc.css");
-@import url("https://rsms.me/inter/inter-ui.css");
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700');
 
 body,
 html {
@@ -14,7 +14,7 @@ html {
 }
 
 .preloader {
-  @include preloader-bg;
+  background-color: #fff;
   opacity: 1;
   visibility: visible;
   height: 100vh;
@@ -34,13 +34,13 @@ html {
 
 body,
 html {
-  font-family: "objektiv-mk1", sans-serif;
-  font-feature-settings: "ss03";
+  font-family: "IBM Plex Mono", monospace;
+  // font-family: "sofia-pro-soft", sans-serif;
   font-size: 0.975em;
   font-weight: 500;
   margin: 0;
   padding: 0;
-  color: #2d3436;
+  color: #2f3640;
   line-height: 1.5em;
 }
 

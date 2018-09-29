@@ -1,6 +1,6 @@
 <?php
 function joelkrause() {
-	wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+	// wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
 	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css');
 	wp_enqueue_style( 'joelkrause-style', get_stylesheet_uri(),false,'1.1','all');
 	wp_enqueue_style( "style", get_stylesheet_directory_uri()."/library/css/main.css",false,'1.1','all');

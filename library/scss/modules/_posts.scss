@@ -19,6 +19,10 @@
     border-bottom: 1px solid #ececec;
   }
 
+  .container {
+    display: flex;
+  }
+
   a {
     color: #2d3436;
     text-decoration: none;
@@ -27,6 +31,10 @@
     &:hover {
       color: $accentColor;
     }
+  }
+
+  .title {
+    flex-grow: 1;
   }
 
   .date {

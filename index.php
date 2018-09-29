@@ -29,15 +29,12 @@ while (have_posts()) : the_post();
 ?>
   <li class="post">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-10">
-          <div class="title">
-            <a href="<?php the_permalink() ?>">
-              <?php the_title(); ?>
-            </a>
-          </div>
-          <div class="tags">
-            <?php
+      <div class="title">
+        <a href="<?php the_permalink() ?>">
+          <?php the_title(); ?>
+        </a>
+        <div class="tags">
+          <?php
             $post_tags = get_the_tags();
             if ($post_tags) {
               foreach($post_tags as $tag) {
@@ -45,13 +42,10 @@ while (have_posts()) : the_post();
               }
             }
             ?>
-          </div>
         </div>
-        <div class="col-12 col-lg-2 text-right">
-          <div class="date">
-            <?php the_time('M jS'); ?>
-          </div>
-        </div>
+      </div>
+      <div class="date">
+        <?php the_time('M jS'); ?>
       </div>
     </div>
   </li>

@@ -30,6 +30,14 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/joelkrause.svg" />
           </a>
         </div>
+        <nav class="site--nav">
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_id'        => 'primary',
+                ) );
+            ?>
+        </nav>
         <div class="social--network">
           <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>

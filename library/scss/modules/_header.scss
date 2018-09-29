@@ -9,8 +9,6 @@
 
         .site-logo {
             position: relative;
-            display: flex;
-            align-items: center;
             transition: all 0.25s;
 
             span {
@@ -31,6 +29,8 @@
             }
 
             a {
+                display: flex;
+                align-items: center;
                 color: #000;
                 text-decoration: none;
             }
@@ -38,8 +38,7 @@
 
         nav {
             flex-grow: 1;
-            border-left: 1px solid #eee;
-            margin-left: 30px;
+            text-align: right;
 
             ul,
             li {
@@ -75,7 +74,6 @@
         }
 
         .social--network {
-            flex-grow: 1;
             font-size: 2em;
             padding: 0 25px;
             text-align: right;
@@ -184,7 +182,6 @@
 // .single {
 //     .page--title {
 //         text-align: center;
-
 //         .blog-title {
 //             &:after {
 //                 left: 50%;

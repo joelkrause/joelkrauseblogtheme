@@ -16,3 +16,16 @@
     setTimeout(function () {
         jQuery('.preloader').addClass('loaded');
     }, 350);
+
+
+    jQuery(document).ready(function () {
+        var maxWidth = 0;
+
+        jQuery(".post .date").each(function () {
+            if ($(this).width() > maxWidth) {
+                maxWidth = $(this).width();
+            }
+        });
+
+        jQuery(".post .date").width(maxWidth);
+    });

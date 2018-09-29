@@ -1,5 +1,6 @@
 .site-header {
-    color: $mainColor;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c7c7c7' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     margin: 0 0 3.5%;
 
     .bar {
@@ -55,8 +56,8 @@
                     a {
                         color: $mainColor;
                         text-decoration: none;
-                        font-weight: 500;
-                        font-size: 1.25em;
+                        font-weight: 700;
+                        font-size: 16px;
                         transition: all 0.25s;
 
                         &:hover {
@@ -116,20 +117,18 @@
     }
 }
 
-.site--wrapper {
-    width: 70%;
-}
-
-.site--side-bg {
-    width: 30%;
-    @include preloader-bg;
-    background-color: $accentColor;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
+// .site--wrapper {
+//     width: 70%;
+// }
+// .site--side-bg {
+//     width: 30%;
+//     // @include sidebg;
+//     background-color: $accentColor;
+//     height: 100vh;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+// }
 .home {
     .page--title {
         max-width: 75%;
@@ -137,10 +136,17 @@
 }
 
 .page--title {
-    font-size: 2em;
+    font-size: 42px;
     line-height: 1.45em;
-    padding: 15vh 0;
+    padding: 20vh 0;
     font-weight: bold;
+
+    .subtitle {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 1.5;
+    }
 
     a {
         color: $accentColor;
@@ -155,18 +161,18 @@
     .blog-title {
         color: #2d3436;
         padding: 0 0 10px 0;
-        margin: 0 0 10px 0;
+        margin: 0 0 0 0;
         position: relative;
         display: inline-block;
-        font-size: 1.5em;
+        font-size: 42px;
 
         &:after {
             content: '';
-            width: 8px;
-            height: 8px;
+            width: 50px;
+            height: 1px;
             background-color: $accentColor;
             position: absolute;
-            bottom: -10px;
+            bottom: 0;
             left: 0;
             border-radius: 50%;
         }
@@ -174,19 +180,21 @@
 
     .post--meta {
         .date {
-            font-size: 0.75em;
+            font-size: 18px;
+            font-weight: normal;
         }
     }
 }
 
-// .single {
-//     .page--title {
-//         text-align: center;
-//         .blog-title {
-//             &:after {
-//                 left: 50%;
-//                 transform: translateY(-50%);
-//             }
-//         }
-//     }
-// }
+.single {
+    .page--title {
+        text-align: center;
+
+        .blog-title {
+            &:after {
+                left: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

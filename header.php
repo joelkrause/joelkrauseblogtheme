@@ -53,7 +53,7 @@
         <div class="post--meta">
           <?php the_title('<h1 class="blog-title">','</h1>');?>
           <div class="date">
-            <?php the_time('M jS, Y'); ?>
+            <?php the_time('M jS, Y'); ?> by Joel Krause
           </div>
         </div>
         <?php } ?>

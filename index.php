@@ -38,7 +38,7 @@ while (have_posts()) : the_post();
             $post_tags = get_the_tags();
             if ($post_tags) {
               foreach($post_tags as $tag) {
-                echo '<span class="post--tag ' . $tag->slug . '">' . $tag->name . '</span>';
+                echo '<span class="post--tag ' . $tag->slug . '">#' . $tag->name . '</span>';
               }
             }
             ?>

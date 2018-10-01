@@ -1,6 +1,4 @@
 .site-header {
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23c7c7c7' fill-opacity='0.75' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     margin: 0 0 3.5%;
 
     .bar {
@@ -13,9 +11,8 @@
             transition: all 0.25s;
 
             span {
-                font-size: 1.25em;
-                border-bottom: 2px solid $accentColor;
-                margin-left: 15px;
+                font-size: 22px;
+                border-bottom: 2px solid var(--main-color);
                 font-weight: bold;
                 text-transform: lowercase;
             }
@@ -32,7 +29,7 @@
             a {
                 display: flex;
                 align-items: center;
-                color: #000;
+                color: var(--body-color);
                 text-decoration: none;
             }
         }
@@ -54,19 +51,19 @@
                     padding: 0 20px;
 
                     a {
-                        color: $mainColor;
+                        color: var(--body-color);
                         text-decoration: none;
-                        font-size: 22px;
+                        font-size: 18px;
                         transition: all 0.25s;
 
                         &:hover {
-                            color: $accentColor;
+                            color: var(--main-color);
                         }
                     }
 
                     &.current-menu-item {
                         a {
-                            color: $accentColor;
+                            color: var(--main-color);
                         }
                     }
                 }
@@ -74,23 +71,22 @@
         }
 
         .social--network {
-            font-size: 2em;
-            padding: 0 25px;
+            font-size: 24px;
             text-align: right;
 
             a {
-                color: #000;
+                color: var(--body-color);
                 text-decoration: none;
                 transition: all 0.25s;
 
                 &:hover {
-                    color: $accentColor;
+                    color: var(--main-color);
                 }
             }
         }
 
         .email-link {
-            color: #000;
+            color: var(--body-color);
             text-decoration: none;
             font-size: 1.25em;
             font-weight: 500;
@@ -98,7 +94,7 @@
     }
 
     .site-info {
-        color: $mainColor;
+        color: var(--body-color);
         padding: 10% 0;
 
         h2 {
@@ -109,7 +105,7 @@
         }
 
         a {
-            color: $mainColor;
+            color: var(--body-color);
             text-decoration: none;
             border-bottom: 2px solid #000;
         }
@@ -122,7 +118,7 @@
 // .site--side-bg {
 //     width: 30%;
 //     // @include sidebg;
-//     background-color: $accentColor;
+//     background-color: var(--main-color);
 //     height: 100vh;
 //     position: fixed;
 //     top: 0;
@@ -148,7 +144,7 @@
     }
 
     a {
-        color: $accentColor;
+        color: var(--main-color);
         transition: all 0.25s;
         text-decoration: none;
 
@@ -158,7 +154,7 @@
     }
 
     .blog-title {
-        color: #2d3436;
+        color: var(--body-color);
         padding: 0 0 10px 0;
         margin: 0 0 0 0;
         position: relative;
@@ -169,11 +165,10 @@
             content: '';
             width: 50px;
             height: 1px;
-            background-color: $accentColor;
+            background-color: var(--main-color);
             position: absolute;
             bottom: 0;
             left: 0;
-            border-radius: 50%;
         }
     }
 
@@ -184,7 +179,7 @@
             line-height: 1;
 
             span {
-                background: #2d3436;
+                background: var(--body-color);
                 color: #fff;
                 margin: 0 5px 0 0;
                 padding: 5px;

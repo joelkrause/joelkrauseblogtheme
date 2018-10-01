@@ -34,12 +34,12 @@ html {
 
 body,
 html {
-  font-family: "interstate", sans-serif;
-  font-size: 14px;
+  font-family: var(--main-font);
+  font-size: 18px;
   font-weight: 500;
   margin: 0;
   padding: 0;
-  color: #2f3640;
+  color: var(--body-color);
   line-height: 1.5em;
 }
 

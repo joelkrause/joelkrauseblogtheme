@@ -26,7 +26,7 @@
       <div class="bar">
         <div class="site-logo">
           <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/joelkrause.svg" />
+            <span>joel krause</span>
           </a>
         </div>
         <nav class="site--nav">
@@ -53,7 +53,7 @@
           <div class="post--meta">
             <?php the_title('<h1 class="blog-title">','</h1>');?>
             <div class="date">
-              <?php the_time('M jS, Y'); ?> by Joel Krause
+              Published on <?php the_time('F jS, Y'); ?> by Joel Krause
             </div>
             <div class="tags">
               <?php

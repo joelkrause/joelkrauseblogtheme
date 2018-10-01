@@ -1,5 +1,6 @@
 .container {
-  width: 80%;
+  width: 75%;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -19,12 +20,12 @@
   }
 
   a {
-    color: #2d3436;
+    color: var(--body-color);
     text-decoration: none;
     transition: all 0.25s;
 
     &:hover {
-      color: $accentColor;
+      color: var(--main-color);
     }
   }
 

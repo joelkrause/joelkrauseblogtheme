@@ -1,6 +1,6 @@
     // Page preloader
     jQuery(document).ready(function () {
-        jQuery('a').on('click', function (event) {
+        jQuery('a:not(#mobile-nav-button)').on('click', function (event) {
             // jQuery('.preloader').removeClass('loaded');
             var thetarget = this.getAttribute('target')
             if (thetarget != "_blank") {
@@ -17,17 +17,18 @@
         jQuery('.preloader').addClass('loaded');
     }, 350);
 
+    $(window).scroll(function () {
+        $(".page--title").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 
-    jQuery(document).ready(function () {
-        var maxWidth = 0;
-
-        jQuery(".post .date").each(function () {
-            if ($(this).width() > maxWidth) {
-                maxWidth = $(this).width();
-            }
-        });
-
-        jQuery(".post .date").width(maxWidth);
+    $('#mobile-nav-button').click(function () {
+        if ($('#mobile-nav-button').hasClass('open')) {
+            $('#mobile-nav-button').removeClass('open');
+            $('.side--nav').removeClass('open');
+        } else {
+            $('.side--nav').addClass('open');
+            $('#mobile-nav-button').addClass('open');
+        }
     });
 
     if (typeof jQuery != 'undefined') {

@@ -124,7 +124,7 @@
 // }
 .home {
     .page--title {
-        max-width: 75%;
+        font-size: 62px;
     }
 }
 
@@ -202,5 +202,82 @@
                 transform: translateY(-50%);
             }
         }
+    }
+}
+
+.hamburger {
+    flex-grow: 1;
+    text-align: right;
+
+    .mobile-hamburger {
+        cursor: pointer;
+        position: relative;
+        width: 40px;
+        display: inline-block;
+        z-index: 99992;
+
+        span {
+            background-color: var(--body-color);
+            height: 4px;
+            width: 40px;
+            margin-bottom: 5px;
+            display: block;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -ms-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &.open {
+            transition: all 0.2s ease-in-out;
+
+            span {
+                transition: all 0.25s;
+                background: #fff;
+
+                &.line1 {
+                    transform: rotate(45deg) translate(12px, 0);
+                    -webkit-transform: rotate(45deg) translate(12px, 0);
+                    -moz-transform: rotate(45deg) translate(12px, 0);
+                    -ms-transform: rotate(45deg) translate(12px, 0);
+                    -o-transform: rotate(45deg) translate(12px, 0);
+                }
+
+                &.line2,
+                &.line4 {
+                    opacity: 0;
+                }
+
+                &.line3 {
+                    transform: rotate(-45deg) translate(13px, 0);
+                    -webkit-transform: rotate(-45deg) translate(13px, 0);
+                    -moz-transform: rotate(-45deg) translate(13px, 0);
+                    -ms-transform: rotate(-45deg) translate(13px, 0);
+                    -o-transform: rotate(-45deg) translate(13px, 0);
+                }
+            }
+        }
+    }
+}
+
+.side--nav {
+    background: var(--body-color);
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 9;
+    right: -100%;
+    transition: right 1s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+    padding: 50px 50px 50px 75px;
+    color: #fff;
+
+    &.open {
+        right: 0;
     }
 }

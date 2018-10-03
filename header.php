@@ -19,8 +19,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div class="preloader"></div>
-  <div class="site--side-bg"></div>
+  <div class="side--nav">
+    side nav
+  </div>
   <div class="site--wrapper">
     <header class="site-header">
       <div class="bar">
@@ -30,16 +31,12 @@
             <span>joel krause</span>
           </a>
         </div>
-        <nav class="site--nav">
-          <?php
-                wp_nav_menu( array(
-                    'theme_location' => 'primary',
-                    'menu_id'        => 'primary',
-                ) );
-            ?>
-        </nav>
-        <div class="social--network">
-          <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="hamburger">
+          <a id="mobile-nav-button" href="javascript:void(0);" class="mobile-hamburger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </a>
         </div>
       </div>
       <div class="container">

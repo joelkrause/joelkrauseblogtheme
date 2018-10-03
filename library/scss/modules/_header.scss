@@ -132,7 +132,7 @@
 }
 
 .page--title {
-    font-size: 42px;
+    font-size: 62px;
     line-height: 1.45em;
     padding: 20vh 0 25vh;
     padding-top: calc(20vh + 95px);
@@ -161,7 +161,7 @@
         margin: 0 0 0 0;
         position: relative;
         display: inline-block;
-        font-size: 52px;
+        font-size: 62px;
 
         &:after {
             content: '';
@@ -278,10 +278,54 @@
     right: -100%;
     transition: right 1s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
-    padding: 50px 50px 50px 75px;
+    padding: 125px 50px 50px 75px;
     color: #fff;
 
     &.open {
         right: 0;
+    }
+
+    nav {
+
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            li {
+                display: block;
+                width: 100%;
+
+                a {
+                    display: block;
+                    color: #fff;
+                    font-size: 46px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    position: relative;
+                    display: inline-block;
+
+                    &:after {
+                        content: '';
+                        height: 5px;
+                        background: #fff;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 0;
+                        transition: width 0.5s ease-in-out;
+                    }
+
+                    &:hover {
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

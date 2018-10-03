@@ -20,7 +20,14 @@
 
 <body <?php body_class(); ?>>
   <div class="side--nav">
-    side nav
+    <nav class="main--navigation">
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'menu_id'        => 'primary',
+        ) );
+      ?>
+    </nav>
   </div>
   <div class="site--wrapper">
     <header class="site-header">

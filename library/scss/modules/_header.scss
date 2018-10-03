@@ -7,6 +7,9 @@
         padding: 25px 25px 0;
         display: flex;
         align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 9;
 
         .site-logo {
             position: relative;
@@ -21,7 +24,7 @@
             }
 
             img {
-                width: 70px;
+                width: 85px;
             }
 
             a {
@@ -132,6 +135,7 @@
     font-size: 42px;
     line-height: 1.45em;
     padding: 20vh 0 25vh;
+    padding-top: calc(20vh + 95px);
     font-weight: bold;
 
     .subtitle {

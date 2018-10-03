@@ -27,8 +27,7 @@
       <div class="bar">
         <div class="site-logo">
           <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" />
-            <span>joel krause</span>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/joelkrause.svg" />
           </a>
         </div>
         <div class="hamburger">

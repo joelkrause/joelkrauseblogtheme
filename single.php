@@ -10,6 +10,14 @@
     <?php endif; ?>
   </div>
 
+  <div class="comments">
+    <?php comments_template(); ?>
+  </div>
+
+  <div class="author--box">
+    author box
+  </div>
+
   <div class="post--nav">
     <div class="row">
       <div class="col-6 text-left">

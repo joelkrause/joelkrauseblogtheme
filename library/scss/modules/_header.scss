@@ -1,5 +1,7 @@
 .site-header {
     margin: 0 0 3.5%;
+    // background: #fbfbff;
+    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
     .bar {
         padding: 25px 25px 0;
@@ -15,15 +17,11 @@
                 border-bottom: 2px solid var(--main-color);
                 font-weight: bold;
                 text-transform: lowercase;
+                margin: 0 0 0 25px;
             }
 
             img {
-                width: 85px;
-                transition: all 0.5s;
-
-                &:hover {
-                    transform: rotate(0.5turn);
-                }
+                width: 70px;
             }
 
             a {
@@ -133,7 +131,7 @@
 .page--title {
     font-size: 42px;
     line-height: 1.45em;
-    padding: 20vh 0;
+    padding: 20vh 0 25vh;
     font-weight: bold;
 
     .subtitle {

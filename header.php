@@ -19,49 +19,40 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div class="side--nav">
-    <nav class="main--navigation">
-      <?php
-        wp_nav_menu( array(
-          'theme_location' => 'primary',
-          'menu_id'        => 'primary',
-        ) );
-      ?>
-    </nav>
-  </div>
+  <div class="preloader"></div>
   <div class="site--wrapper">
     <header class="site-header">
-      <div class="bar">
-        <div class="site-logo">
-          <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/joelkrause.svg" />
-          </a>
-        </div>
-        <div class="hamburger">
-          <a id="mobile-nav-button" href="javascript:void(0);" class="mobile-hamburger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-          </a>
-        </div>
-      </div>
       <div class="container">
-        <div class="page--title">
+        <div class="bar">
+          <div class="site-logo">
+            <a href="<?php echo home_url(); ?>">
+              <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" />
+              <span>Joel Krause</span>
+            </a>
+          </div>
+          <?php if (!is_front_page()) {?>
+          <div class="back--button">
+            <a href="<?php echo home_url();?>">
+              <- Home</a> </div> <?php } ?>
+          </div>
 
-          <?php if (is_front_page() ) { ?>
-          Hey, I'm Joel &amp; I'm a passionate front-end developer at
-          <a href="http://www.chriate.com.au" target="_blank">Studio Chriate</a>.
-          <?php } else if (is_page()) { ?>
-          <?php the_title('<h1 class="blog-title">','</h1>');?>
-          <?php } else if (is_singular()) { ?>
-          <div class="post--meta">
+          <div class="page--title">
+
+            <?php if (is_front_page() ) { ?>
+            Hey, I'm Joel &amp; I'm a passionate front-end developer at
+            <a href="http://www.chriate.com.au" target="_blank">Studio Chriate</a>.
+            <span class="subtitle">This is my space where I share all my tips &amp; tricks of being a front-end dev</span>
+            <?php } else if (is_page()) { ?>
             <?php the_title('<h1 class="blog-title">','</h1>');?>
-            <div class="date">
-              Published on
-              <?php the_time('F jS, Y'); ?> by Joel Krause
-            </div>
-            <div class="tags">
-              <?php
+            <?php } else if (is_singular()) { ?>
+            <div class="post--meta">
+              <?php the_title('<h1 class="blog-title">','</h1>');?>
+              <div class="date">
+                Published on
+                <?php the_time('F jS, Y'); ?> by Joel Krause
+              </div>
+              <div class="tags">
+                <?php
             $post_tags = get_the_tags();
             if ($post_tags) {
               foreach($post_tags as $tag) {
@@ -69,10 +60,9 @@
               }
             }
             ?>
+              </div>
             </div>
+            <?php } ?>
           </div>
-          <?php } ?>
-
         </div>
-      </div>
     </header>

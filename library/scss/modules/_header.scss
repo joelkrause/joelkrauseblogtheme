@@ -1,13 +1,10 @@
 .site-header {
     margin: 0 0 3.5%;
-    // background: #fbfbff;
-    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
     .bar {
-        padding: 25px 25px 0;
+        padding: 25px 0;
         display: flex;
         align-items: center;
-        position: fixed;
         width: 100%;
         z-index: 9;
 
@@ -16,20 +13,29 @@
             transition: all 0.25s;
 
             span {
-                font-size: 22px;
-                border-bottom: 2px solid var(--main-color);
-                font-weight: bold;
-                text-transform: lowercase;
+                font-size: 16px;
+                border-bottom: 1px solid var(--body-color);
                 margin: 0 0 0 25px;
+                line-height: 1;
             }
 
             img {
-                width: 85px;
+                width: 65px;
             }
 
             a {
                 display: flex;
                 align-items: center;
+                color: var(--body-color);
+                text-decoration: none;
+            }
+        }
+
+        .back--button {
+            flex-grow: 1;
+            text-align: right;
+
+            a {
                 color: var(--body-color);
                 text-decoration: none;
             }
@@ -113,36 +119,29 @@
     }
 }
 
-// .site--wrapper {
-//     width: 70%;
-// }
-// .site--side-bg {
-//     width: 30%;
-//     // @include sidebg;
-//     background-color: var(--main-color);
-//     height: 100vh;
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-// }
 .home {
     .page--title {
-        font-size: 62px;
+        @include desktop-up {
+            max-width: 65%;
+        }
     }
 }
 
 .page--title {
-    font-size: 62px;
+    font-size: 18px;
     line-height: 1.45em;
-    padding: 20vh 0 25vh;
-    padding-top: calc(20vh + 95px);
-    font-weight: bold;
+    padding: 10% 0;
+    font-weight: 400;
+
+    @include desktop-up {
+        font-size: var(--base-heading-size);
+    }
 
     .subtitle {
         font-weight: 400;
-        font-style: italic;
         font-size: 18px;
         line-height: 1.5;
+        display: block;
     }
 
     a {
@@ -161,7 +160,8 @@
         margin: 0 0 0 0;
         position: relative;
         display: inline-block;
-        font-size: 62px;
+        font-size: var(--base-heading-size);
+        font-weight: 400;
 
         &:after {
             content: '';
@@ -190,7 +190,7 @@
         }
 
         .date {
-            font-size: 18px;
+            font-size: 14px;
             font-weight: normal;
         }
     }
@@ -222,6 +222,7 @@
 
         span {
             background-color: var(--body-color);
+            border-radius: 5px;
             height: 4px;
             width: 40px;
             margin-bottom: 5px;

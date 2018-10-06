@@ -1,21 +1,4 @@
-@import url("https://use.typekit.net/bmo2zpc.css");
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700|Oswald:500');
-
-@font-face {
-  font-family: 'CircularStd-Black';
-  src: url('../../assets/fonts/CircularStd-Black.eot');
-  src: url('../../assets/fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/CircularStd-Black.woff') format('woff'), url('../../assets/fonts/CircularStd-Black.ttf') format('truetype'), url('../../assets/fonts/CircularStd-Black.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CircularStd-Book';
-  src: url('../../assets/fonts/CircularStd-Book.eot');
-  src: url('../../assets/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/CircularStd-Book.woff') format('woff'), url('../../assets/fonts/CircularStd-Book.ttf') format('truetype'), url('../../assets/fonts/CircularStd-Book.svg#bcc26993292869431e54c666aafa8fcd') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://rsms.me/inter/inter-ui.css');
 
 body,
 html {
@@ -51,7 +34,7 @@ html {
 body,
 html {
   font-family: var(--main-font);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
   padding: 0;

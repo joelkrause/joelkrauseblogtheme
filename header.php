@@ -39,8 +39,8 @@
           <div class="page--title">
 
             <?php if (is_front_page() ) { ?>
-            Hey, I'm Joel &amp; I'm a passionate front-end developer at
-            <a href="http://www.chriate.com.au" target="_blank">Studio Chriate</a>.
+            <div class="main">I'm Joel &amp; I'm a passionate <span>front-end developer</span> at
+              <a href="http://www.chriate.com.au" target="_blank">Studio Chriate</a>.</div>
             <span class="subtitle">This is my space where I share all my tips &amp; tricks of being a front-end dev</span>
             <?php } else if (is_page()) { ?>
             <?php the_title('<h1 class="blog-title">','</h1>');?>

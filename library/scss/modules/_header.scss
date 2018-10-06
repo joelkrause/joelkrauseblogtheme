@@ -1,8 +1,15 @@
 .site-header {
     margin: 0 0 3.5%;
+    height: 75vh;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
     .bar {
-        padding: 25px 0;
+        padding: 50px 0 0;
         display: flex;
         align-items: center;
         width: 100%;
@@ -121,6 +128,15 @@
 
 .home {
     .page--title {
+        .main {
+            font-weight: 500;
+
+            span {
+                color: #ccc;
+                text-decoration: underline;
+            }
+        }
+
         @include desktop-up {
             max-width: 65%;
         }
@@ -130,8 +146,11 @@
 .page--title {
     font-size: 18px;
     line-height: 1.45em;
-    padding: 10% 0;
     font-weight: 400;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include desktop-up {
         font-size: var(--base-heading-size);
@@ -145,13 +164,8 @@
     }
 
     a {
-        color: var(--main-color);
-        transition: all 0.25s;
+        color: var(--body-color);
         text-decoration: none;
-
-        &:hover {
-            color: #eee;
-        }
     }
 
     .blog-title {
@@ -161,7 +175,7 @@
         position: relative;
         display: inline-block;
         font-size: var(--base-heading-size);
-        font-weight: 400;
+        font-weight: 500;
 
         &:after {
             content: '';
@@ -192,6 +206,7 @@
         .date {
             font-size: 14px;
             font-weight: normal;
+            margin: 10px 0;
         }
     }
 }
@@ -203,7 +218,7 @@
         .blog-title {
             &:after {
                 left: 50%;
-                transform: translateY(-50%);
+                transform: translateX(-50%);
             }
         }
     }

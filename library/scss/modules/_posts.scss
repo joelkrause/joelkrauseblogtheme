@@ -10,7 +10,7 @@
 }
 
 .post {
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 16px;
   color: #fff;
   display: flex;
@@ -52,18 +52,12 @@
   .site-info {
     text-align: center;
   }
-
-  .post--nav {
-    padding: 25px 0 0;
-    margin: 25px 0 0;
-    border-top: 1px solid #ececec;
-  }
 }
 
 .index--date {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  margin: 0 0 3.5%;
+  margin: 15px 0 0;
 }
 
 .wpcf7-form {
@@ -101,5 +95,53 @@
   .message {
     flex-grow: 1;
     width: 100%;
+  }
+}
+
+
+.post--nav {
+  padding: 25px 0 0;
+  margin: 25px 0 0;
+  border-top: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  .prev--link,
+  .next--link {
+    width: 50%;
+    flex-grow: 1;
+
+    span {
+      font-weight: 600;
+      display: block;
+      font-size: 14px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--body-color);
+      transition: all 0.25s;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+}
+
+.comments {
+
+  ol,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .commentlist {
+    .comment {
+      border-top: 1px solid #ececec;
+    }
   }
 }

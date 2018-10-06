@@ -19,14 +19,12 @@
   </div>
 
   <div class="post--nav">
-    <div class="row">
-      <div class="col-6 text-left">
-        <?php previous_post_link(); ?>
+      <div class="prev--link text-left">
+        <?php previous_post_link('%link','<span>Prev</span><- %title'); ?>
       </div>
-      <div class="col-6 text-right">
-        <?php next_post_link(); ?>
+      <div class="next--link text-right">
+        <?php next_post_link('%link','<span>Next</span> %title ->'); ?>
       </div>
-    </div>
   </div>
 </div>
 

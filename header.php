@@ -22,19 +22,21 @@
   <div class="preloader"></div>
   <div class="site--wrapper">
     <header class="site-header">
-      <div class="container">
-        <div class="bar">
-          <div class="site-logo">
-            <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" />
-              <span>Joel Krause</span>
-            </a>
-          </div>
-          <?php if (!is_front_page()) {?>
-          <div class="back--button">
-            <a href="<?php echo home_url();?>">
-              <- Home</a> </div> <?php } ?>
-          </div>
+      <div class="bar">
+        <div class="site-logo">
+          <a href="<?php echo home_url(); ?>">
+            Joel Krause // <span>front-end dev.</span>
+          </a>
+        </div>
+        <div class="social--network">
+          <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <?php if (!is_front_page()) {?>
+        <div class="back--button">
+          <a href="<?php echo home_url();?>">
+            <- Home</a> </div> <?php } ?>
+        </div>
+        <div class="container">
 
           <div class="page--title">
 

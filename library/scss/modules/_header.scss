@@ -9,7 +9,7 @@
     }
 
     .bar {
-        padding: 50px 0 0;
+        padding: 15px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -21,8 +21,8 @@
 
             span {
                 font-size: 16px;
-                border-bottom: 1px solid var(--body-color);
-                margin: 0 0 0 25px;
+                font-weight: 600;
+                margin: 0 0 0 5px;
                 line-height: 1;
             }
 
@@ -85,8 +85,9 @@
         }
 
         .social--network {
-            font-size: 24px;
+            font-size: 18px;
             text-align: right;
+            flex-grow: 1;
 
             a {
                 color: var(--body-color);
@@ -129,7 +130,7 @@
 .home {
     .page--title {
         .main {
-            font-weight: 500;
+            font-weight: 600;
 
             span {
                 color: #ccc;
@@ -146,7 +147,7 @@
 .page--title {
     font-size: 18px;
     line-height: 1.45em;
-    font-weight: 400;
+    font-weight: 600;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -175,7 +176,7 @@
         position: relative;
         display: inline-block;
         font-size: var(--base-heading-size);
-        font-weight: 500;
+        font-weight: 600;
 
         &:after {
             content: '';

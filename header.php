@@ -31,10 +31,6 @@
         <div class="social--network">
           <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
-        <?php if (!is_front_page()) {?>
-        <div class="back--button">
-          <a href="<?php echo home_url();?>">
-            <- Home</a> </div> <?php } ?>
         </div>
         <div class="container">
 

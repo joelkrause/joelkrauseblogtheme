@@ -20,10 +20,10 @@
 
   <div class="post--nav">
       <div class="prev--link text-left">
-        <?php previous_post_link('%link','<span>Prev</span><- %title'); ?>
+        <?php previous_post_link('%link','<span><- Prev</span> %title'); ?>
       </div>
       <div class="next--link text-right">
-        <?php next_post_link('%link','<span>Next</span> %title ->'); ?>
+        <?php next_post_link('%link','<span>Next -></span> %title'); ?>
       </div>
   </div>
 </div>

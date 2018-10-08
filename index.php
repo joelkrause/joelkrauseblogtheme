@@ -15,8 +15,8 @@
 get_header();
 ?>
 <div class="container">
-<ul class="post-list">
-  <?php
+  <ul class="post-list">
+    <?php
 $day_check = '';
 while (have_posts()) : the_post();
   $day = get_the_date('Y');
@@ -27,32 +27,22 @@ while (have_posts()) : the_post();
     echo '<div class="row"><div class="col-12"><div class="index--date"> '.get_the_date("Y") . '</div></div></div><ul class="post-list">';
   }
 ?>
-  <li class="post">
-      <div class="title">
-        <a href="<?php the_permalink() ?>">
+    <li class="post">
+      <a href="<?php the_permalink() ?>">
+        <div class="title">
           <?php the_title(); ?>
-        </a>
-        <div class="tags">
-          <?php
-            $post_tags = get_the_tags();
-            if ($post_tags) {
-              foreach($post_tags as $tag) {
-                echo '<span class="post--tag ' . $tag->slug . '">#' . $tag->name . '</span>';
-              }
-            }
-            ?>
         </div>
-      </div>
-      <div class="date">
-        <?php the_time('M jS'); ?>
-      </div>
-  </li>
-  <?php
+        <div class="date">
+          <?php the_time('M jS'); ?>
+        </div>
+      </a>
+    </li>
+    <?php
 $day_check = $day;
 endwhile; ?>
-  <?php if ( have_posts() ) : ?>
-  <?php endif; ?>
-</ul>
+    <?php if ( have_posts() ) : ?>
+    <?php endif; ?>
+  </ul>
 </div>
 <?php
 get_footer();

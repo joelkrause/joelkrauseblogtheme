@@ -21,10 +21,7 @@ $day_check = '';
 while (have_posts()) : the_post();
   $day = get_the_date('Y');
   if ($day != $day_check) {
-    if ($day_check != '') {
-      echo '</ul>'; // close the list here
-    }
-    echo '<div class="row"><div class="col-12"><div class="index--date"> '.get_the_date("Y") . '</div></div></div><ul class="post-list">';
+    echo '<div class="row"><div class="col-12"><div class="index--date"> '.get_the_date("Y") . '</div></div></div>';
   }
 ?>
     <li class="post">

@@ -19,21 +19,35 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="side--nav">
+    <nav class="main--navigation">
+      <?php
+        wp_nav_menu( array(
+          'theme_location' => 'primary',
+          'menu_id'        => 'primary',
+        ) );
+      ?>
+    </nav>
+  </div>
   <div class="preloader"></div>
   <div class="site--wrapper">
     <header class="site-header">
-      <div class="container">
-        <div class="bar">
-          <div class="site-logo">
-            <a href="<?php echo home_url(); ?>">
-              Joel Krause // <span>front-end dev.</span>
-            </a>
-          </div>
-          <div class="social--network">
-            <a href="https://twitter.com/joel_krause" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
 
+      <div class="bar">
+        <div class="site-logo">
+          <a href="<?php echo home_url(); ?>">
+            Joel Krause // <span>front-end dev.</span>
+          </a>
+        </div>
+        <div class="hamburger">
+          <a id="mobile-nav-button" href="javascript:void(0);" class="mobile-hamburger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </a>
+        </div>
+      </div>
+      <div class="container">
 
         <div class="page--title">
 

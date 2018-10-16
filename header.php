@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="side--nav">
+  <div class="side--nav">
     <nav class="main--navigation">
       <?php
         wp_nav_menu( array(
@@ -78,4 +78,7 @@
           <?php } ?>
         </div>
       </div>
+      <a href="#tocontent" class="scroll-msg-inner">
+        <div class="scroll-msg-wheel"></div>
+      </a>
     </header>
